@@ -79,23 +79,37 @@
 
 // ============================================== //
 
-function printFirstItemThenFirstHalfThenSayHi100Times {
-    console.log(items[0]);
+// function printFirstItemThenFirstHalfThenSayHi100Times {
+//     console.log(items[0]);
 
-    let middleIndex = Math.floor(items.length / 2)
-    let index = 0;
+//     let middleIndex = Math.floor(items.length / 2)
+//     let index = 0;
 
-    while (index < middleIndex) {
-        console.log(items[index]);
-        index++;
-    }
+//     while (index < middleIndex) {
+//         console.log(items[index]);
+//         index++;
+//     }
 
-    for (var i = 0; i < 100; i++) {
-        console.log(`hi`);
-    }
-}
+//     for (var i = 0; i < 100; i++) {
+//         console.log(`hi`);
+//     }
+// }
 
-// O( 1 + n/2 + 100), 
-// O(n/2 + 101), # doesn't matter, becomes
-// O(n/2 + 1), worst case scenario, 1 doesn't matter
-// O(n)
+// // O( 1 + n/2 + 100), 
+// // O(n/2 + 101), # doesn't matter, becomes
+// // O(n/2 + 1), worst case scenario, 1 doesn't matter
+// // O(n)
+
+// ============================================== //
+
+// function compressBoxesTwice(boxes) {
+//     boxes.forEach(function (boxes) {
+//         console.log(boxes);
+//     })
+
+//     boxes.forEach(function (boxes) {
+//         console.log(boxes);
+//     })
+// }
+
+// // O(a+b)
