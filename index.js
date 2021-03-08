@@ -151,20 +151,41 @@
 // // O(n + n^2)
 // // O(n^2)
 
-function booooo(n) {
-    for (let i = 0; i < n.length; i++) {
-        console.log(`boooooooo`);
-    }
-}
+// function booooo(n) {
+//     for (let i = 0; i < n.length; i++) {
+//         console.log(`boooooooo`);
+//     }
+// }
 
-booooo([1, 2, 3, 4, 5]); // has a space complexity of O(1) because we're only creating `let i = 0`
+// booooo([1, 2, 3, 4, 5]); // has a space complexity of O(1) because we're only creating `let i = 0`
 
-function arrayyOfHiNTimes(n) {
-    let hiArray = [];
-    for (let i = 0; i < n; i++) {
-        hiArray[i] = `hi`;
-    }
-    return console.log(hiArray);
-}
+// function arrayyOfHiNTimes(n) {
+//     let hiArray = [];
+//     for (let i = 0; i < n; i++) {
+//         hiArray[i] = `hi`;
+//     }
+//     return console.log(hiArray);
+// }
 
-arrayyOfHiNTimes(6) // O(n) beacuse we're creating a new data structure and each new item in the hiArray is an additional memory space
+// arrayyOfHiNTimes(6) // O(n) beacuse we're creating a new data structure and each new item in the hiArray is an additional memory space
+
+// ============================================== //
+
+const array = [{`hi`}, { `my` }, { `teddy` }];
+array[0]; // O(1)
+array[array.length - 1] // O(1)
+
+const arrayy = [{
+    tweet: `hi`,
+    date: 2012
+}, {
+    tweet: `my`,
+    date: 2015
+}, {
+    tweet: `teddy`,
+    date: 2018
+}];
+
+// O(n^2)
+
+`sofuhweroniwerneworinweofirnewfon`.length //O(1)
