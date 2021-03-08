@@ -116,16 +116,55 @@
 
 // ============================================== //
 
-const boxes = [`a`, `b`, `c`, `d`, `e`]
+// const boxes = [`a`, `b`, `c`, `d`, `e`]
 
-function logAllPairsOfArray(array) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array.length; j++)
-            console.log(array[i], array[j]);
-        // box = (boxes[i] + boxes[i + 1]);
+// function logAllPairsOfArray(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = 0; j < array.length; j++)
+//             console.log(array[i], array[j]);
+//         // box = (boxes[i] + boxes[i + 1]);
+//     }
+// }
+
+// logAllPairsOfArray(boxes);
+
+// // O( n * n) --> O(n^2)
+
+// ============================================== //
+
+// function PrintAllNumbersThenAllPairSums(numbers) {
+//     console.log(`these are the numbers:`);
+//     numbers.forEach(function (number) {
+//         console.log(number);
+//     });
+
+//     console.log(`and these are their sums:`);
+//     numbers.forEach(function (firstNumnber) {
+//         numbers.forEach(function (secondNumber) {
+//             console.log(firstNumnber + secondNumber);
+//         })
+//     })
+// }
+
+// PrintAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
+
+// // O(n + n^2)
+// // O(n^2)
+
+function booooo(n) {
+    for (let i = 0; i < n.length; i++) {
+        console.log(`boooooooo`);
     }
 }
 
-logAllPairsOfArray(boxes);
+booooo([1, 2, 3, 4, 5]); // has a space complexity of O(1) because we're only creating `let i = 0`
 
-// O( n * n) --> O(n^2)
+function arrayyOfHiNTimes(n) {
+    let hiArray = [];
+    for (let i = 0; i < n; i++) {
+        hiArray[i] = `hi`;
+    }
+    return console.log(hiArray);
+}
+
+arrayyOfHiNTimes(6) // O(n) beacuse we're creating a new data structure and each new item in the hiArray is an additional memory space
